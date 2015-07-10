@@ -52,7 +52,6 @@ def ask_save(url):
 def save(url):
 	fname = url.split('www.')[1]
 	fname = fname.split('/')[0]
-	fname = fname+'.sh'
 	data = 'sqlmap -u '+url+' --tor --tor-type=SOCKS5 --time-sec=10 --check-tor --tamper=charencode.py --dbs\r\n'
 	file = open('output/'+fname,'w')
 	file.write(data)
