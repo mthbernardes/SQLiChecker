@@ -56,7 +56,6 @@ def save(url):
 	file = open('output/'+fname,'w')
 	file.write(data)
 	file.close
-	os.system('chmod +x output/'+fname)
 	print '[+] - File saved at output/'+fname
 	print
 
